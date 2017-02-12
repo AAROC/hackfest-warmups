@@ -6,7 +6,7 @@ $POST_DATA = array(
 	 'file[]' => new \CurlFile(realpath($input_path_str), 'text/plain', $input_path_str)
 );
 
-$url_path_str = 'http://151.97.41.76:8888/v1.0/tasks/' . $argv[1] . '/input?user=gridct';
+$url_path_str = 'http://151.97.41.43:8888/v1.0/tasks/' . $argv[1] . '/input?user=gridct';
 $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL, $url_path_str);
